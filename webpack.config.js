@@ -64,7 +64,9 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "react_parent_app",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        remote:"react_child_app@http://localhost:3001/remoteEntry.js"
+      },
       exposes: {},
       shared: {
         ...deps,
