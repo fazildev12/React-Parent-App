@@ -65,7 +65,7 @@ module.exports = (_, argv) => ({
       name: "react_parent_app",
       filename: "remoteEntry.js",
       remotes: {
-        remote:"react_child_app@http://localhost:3001/remoteEntry.js"
+        remote:"react_child_app@https://react-child-app.vercel.app/remoteEntry.js"
       },
       exposes: {},
       shared: {
